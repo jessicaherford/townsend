@@ -107,12 +107,16 @@ html {
   font-size: 1.4em;
 }
 .bio p,
-.contact p,
-.exhibitions p,
-.contact a {
+.exhibitions p {
   color: #fff;
   font-size: 1.4em;
   margin-bottom: 0px;
+}
+.contact p,
+.contact a {
+  color: #fff;
+  font-size: 1.4em;
+  margin-bottom: 10px;
 }
 .bio h1,
 .exhibitions h1,
