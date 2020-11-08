@@ -40,6 +40,7 @@ html {
 .Home .statement > h1 {
   text-align: center;
   color: #79a151;
+  font-size: 2em;
 }
 .Home .statement {
   padding: 10px 40px;
@@ -124,15 +125,8 @@ html {
   margin-top: 40px;
 }
 
-/* Large screens */
-@media only screen and (min-width: 1024px) {
-  .image-container {
-    column-count: 3;
-  }
-}
-
-/* Medium-sized screens */
-@media only screen and (max-width: 1023px) and (min-width: 768px) {
+/* Medium/Large-sized screens */
+@media only screen and (min-width: 768px) {
   .image-container {
     column-count: 3;
   }
@@ -146,6 +140,9 @@ html {
 
 /* Small-Medium screens */
 @media only screen and (max-width: 768px) {
+  .Home .statement {
+    padding: 10px;
+  }
   .image-container {
     column-count: 2;
   }
@@ -157,6 +154,11 @@ html {
   }
   .carousel .slide img {
     height: 40vh;
+  }
+  .bio h1,
+  .exhibitions h1,
+  .contact h1 {
+    margin-top: 20px;
   }
 }
 
