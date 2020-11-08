@@ -7,7 +7,8 @@ function Bio() {
         <div className="row align-items-center my-5">
           <div className="col-12">
             <h1 className="font-weight-light">Education</h1>
-            <p>College of the Redwoods 2004 Capellagarden/ Sweden 2005</p>
+            <p>College of the Redwoods 2004</p>
+            <p>Capellagarden/ Sweden 2005</p>
           </div>
           <div className="col-12">
             <h1 className="font-weight-light">Publications</h1>
@@ -17,7 +18,8 @@ function Bio() {
           </div>
           <div className="col-12">
             <h1 className="font-weight-light">Honors</h1>
-            <p>Craftsman Challenge 2006 Grand Prize/1st Place</p>
+            <p>Craftsman Challenge</p>
+            <p>2006 Grand Prize/1st Place</p>
           </div>
         </div>
       </div>

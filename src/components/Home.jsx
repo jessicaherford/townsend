@@ -56,7 +56,10 @@ class Home extends Component {
             explore complex forms and develop as an artist. I continued my
             education at Capellagarden in Sweden, a school with a long history
             in design and detailed craftsmanship. There I further developed my
-            sense of materials, form, and composition. My inspiration comes from
+            sense of materials, form, and composition.
+          </p> 
+          <p>
+            My inspiration comes from
             nature, Asian Arts, and work of some of the great designers/ makers
             of the past, like Jacques-Emile Ruhlman and Edward Barnsley.
           </p>

@@ -12,7 +12,7 @@ function Contact() {
               hours from Denver.
             </p>
             <p>Mail: 8172 Lazy Daze Road Salida, CO 81201</p>
-            <p>Tel: (719) 530-1088</p>
+            <a href="tel:719-530-1088">Tel: (719) 530-1088</a>
             <p>Email:kent@kenttownsend.com</p>
           </div>
         </div>

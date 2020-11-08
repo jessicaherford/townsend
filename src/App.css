@@ -1,3 +1,9 @@
+/* Override Safari */
+a[href^="tel"] {
+  text-decoration: inherit;
+  color: inherit;
+}
+
 /* Box-sizing reset: //w3bits.com/?p=3225 */
 html {
   box-sizing: border-box;
@@ -97,10 +103,16 @@ html {
 .exhibitions a {
   color: #79a151;
 }
+.exhibitions a {
+  font-size: 1.4em;
+}
 .bio p,
 .contact p,
-.exhibitions p {
+.exhibitions p,
+.contact a {
   color: #fff;
+  font-size: 1.4em;
+  margin-bottom: 0px;
 }
 .bio h1,
 .exhibitions h1,
