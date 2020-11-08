@@ -1,38 +1,143 @@
-.App {
+/* Box-sizing reset: //w3bits.com/?p=3225 */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-size: 34px;
+}
+.navbar-brand > span {
+  color: #79a151;
+  font-size: 28px;
+  display: block;
+  margin-top: -16px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Home */
+.Home {
+  margin-top: 20px;
+}
+.Home > div.container {
+  color: #fff;
+}
+.Home .statement > h1 {
+  text-align: center;
+  color: #79a151;
+}
+.Home .statement {
+  padding: 10px 40px;
+  margin-top: 70px;
+  margin-bottom: 10px;
+}
+.carousel .slide img {
+  height: 70vh;
+}
+.carousel .thumbs-wrapper {
+  margin: 20px 0px !important;
+}
+.carousel .thumb,
+.carousel .thumb img {
+  height: 60px;
+}
+.carousel .thumbs {
+  padding-left: 0px;
+}
+.carousel .thumb.selected {
+  border: 3px solid #79a151 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Gallery */
+.gallery {
+  width: 80vw;
+  margin: 0 auto;
+}
+.gallery {
+  padding: 1.5em;
+  margin-right: auto;
+  margin-left: auto;
+}
+.image-container {
+  columns: 1;
+  column-gap: 10px;
+}
+.image-container img {
+  width: 100%;
+}
+.image-list {
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px;
+}
+.image-list img {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* Bio & Contact */
+.bio,
+.contact {
+  text-align: center;
+  height: 80vh;
+}
+.bio h1.font-weight-light,
+.contact h1 {
+  color: #79a151;
+}
+.bio p,
+.contact p {
+  color: #fff;
+}
+
+/* Large screens */
+@media only screen and (min-width: 1024px) {
+  .image-container {
+    column-count: 3;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .image-container {
+    column-count: 3;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+/* Small-Medium screens */
+@media only screen and (max-width: 768px) {
+  .image-container {
+    column-count: 2;
+  }
+  .Home .rec img {
+    height: 50vh;
+  }
+  .carousel ul.control-dots li.dot {
+    display: none;
+  }
+  .carousel .slide img {
+    height: 40vh;
+  }
+}
+
+/* Small screens */
+@media only screen and (max-width: 460px) {
+  .gallery {
+    width: 100vw;
+  }
+  .image-container {
+    column-count: 1;
+  }
+  .navbar-brand {
+    font-size: 24px;
+  }
+  .navbar-brand > span {
+    font-size: 18px;
+    margin-top: -10px;
   }
 }
