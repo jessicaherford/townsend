@@ -41,7 +41,7 @@ class Home extends Component {
             }
         </Carousel>
         <div className="col-12 statement">
-          <h1 className="font-weight-light">Artist's Statement</h1>
+          <h1>Artist's Statement</h1>
           <p>
             Creating one of a kind furniture represents a unique blending of the
             beauty, elegance, and materials of the natural world with the

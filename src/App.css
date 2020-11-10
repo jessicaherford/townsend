@@ -15,6 +15,11 @@ html {
 }
 
 /* Navbar */
+.navigation {
+  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
 .navbar-brand {
   font-size: 34px;
 }
@@ -33,9 +38,6 @@ html {
 /* Home */
 .Home {
   margin-top: 20px;
-}
-.Home > div.container {
-  color: #fff;
 }
 .Home .statement > h1 {
   text-align: center;
@@ -109,13 +111,11 @@ html {
 }
 .bio p,
 .exhibitions p {
-  color: #fff;
   font-size: 1.4em;
   margin-bottom: 0px;
 }
 .contact p,
 .contact a {
-  color: #fff;
   font-size: 1.4em;
   margin-bottom: 10px;
 }
@@ -127,6 +127,9 @@ html {
 
 /* Medium/Large-sized screens */
 @media only screen and (min-width: 768px) {
+  .navigation {
+    margin-bottom: 60px;
+  }
   .image-container {
     column-count: 3;
   }

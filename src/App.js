@@ -5,7 +5,7 @@ import { Navigation, Footer, Home, Bio, Gallery, Contact, Exhibitions } from "./
 
 function App() {
   return (
-    <div className="App bg-dark">
+    <div className="App">
       <Router>
         <Navigation />
         <Switch>
