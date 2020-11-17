@@ -30,8 +30,7 @@ class Home extends Component {
       // ]
       images: [ 
         {id: 17, title: "gal17"},
-        {id: 12, title: "gal21"},
-        {id: 21, title: "gal2"}     
+        {id: 12, title: "gal21"}
       ]
     }
 
@@ -41,7 +40,7 @@ class Home extends Component {
     return ( 
     <div className="Home">
       <div className="">
-        <Carousel autoPlay infiniteLoop interval='10000' transitionTime='550'>
+        <Carousel autoPlay infiniteLoop stopOnHover={false} interval='10000' transitionTime='550'>
            {
               images.map(image => <div key={image.id} ><img src={buildURL(image.title)} alt={image.title}></img></div>)
             }
