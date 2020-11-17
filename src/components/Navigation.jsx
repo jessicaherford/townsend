@@ -8,6 +8,7 @@ function Navigation(props) {
         <div className="container">
           <Link className="navbar-brand" to="/">
             KENT TOWNSEND <br />
+            <hr/>
             <span>Fine Furniture</span>
           </Link>
           <button

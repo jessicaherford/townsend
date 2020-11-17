@@ -5,7 +5,10 @@ function Contact() {
     <div className="contact">
       <div className="container">
         <div className="row align-items-center my-5">
-          <div className="col-lg-12">
+          <div className="col-md-6 col-lg-6 col-sm-12">
+            <img src="./assets/salida.jpg"></img>
+          </div>
+          <div className="col-md-6 col-lg-6 col-sm-12">
             <h1 className="font-weight-light">Contact</h1>
             <p>Kent Townsend Fine Furniture is located in Salida, CO. </p>
             <p>We are 3 hours from Denver.</p>

@@ -4,5 +4,4 @@ export { default as Home } from "./Home";
 export { default as Bio } from "./Bio";
 export { default as Contact } from "./Contact";
 export { default as Gallery } from "./Gallery";
-export { default as Carousel } from "./Carousel";
 export { default as Exhibitions } from "./Exhibitions";

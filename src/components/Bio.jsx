@@ -4,21 +4,29 @@ function Bio() {
   return (
     <div className="bio">
       <div className="container">
-        <div className="row align-items-center my-5">
-          <div className="col-12">
+        <div className="row  my-5">
+          <div className="col-md-6 col-lg-6 col-sm-12">
+            <img src="./assets/college-of-redwoods.jpg" height="100px"></img>
+          </div>
+          <div className="col-md-6 col-lg-6 col-sm-12">
             <h1 className="font-weight-light">Education</h1>
             <p>College of the Redwoods 2004</p>
             <p>Capellagarden/ Sweden 2005</p>
           </div>
-          <div className="col-12">
+          <div className="col-md-6 col-lg-6 col-sm-12">            
+            <img src="./assets/woodworker_west.jpg" height="100px"></img>
+          </div>
+          <div className="col-md-6 col-lg-6 col-sm-12">
             <h1 className="font-weight-light">Publications</h1>
             <p style={{ marginBottom: "1px" }}>Woodworker West 2004</p>
             <p style={{ marginBottom: "1px" }}>Robb Report 2007</p>
             <p>Woodworker West 2007</p>
           </div>
-          <div className="col-12">
+          <div className="col-md-6 col-lg-6 col-sm-12">
+            <img src="./assets/craftsman_challenge.png" width="300px"></img>
+          </div>
+          <div className="col-md-6 col-lg-6 col-sm-12">
             <h1 className="font-weight-light">Honors</h1>
-            <p>Craftsman Challenge</p>
             <p>2006 Grand Prize/1st Place</p>
           </div>
         </div>

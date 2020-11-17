@@ -15,16 +15,18 @@ html {
 }
 
 /* Navbar */
-.navigation {
-  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-  -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+.navbar {
+  position: relative;
+  z-index: 2;
 }
 .navbar-brand {
   font-size: 34px;
 }
+.navbar-brand hr {
+  margin-top: 0px;
+  color: rgba(0, 0, 0, 0.5);
+}
 .navbar-brand > span {
-  color: #79a151;
   font-size: 28px;
   display: block;
   margin-top: -16px;
@@ -32,28 +34,31 @@ html {
 }
 
 #navbarResponsive {
-  text-align: center;
+  text-align: right;
+  margin-right: 5px;
 }
 
 /* Home */
-.Home {
-  margin-top: 20px;
-}
 .Home .statement > h1 {
   text-align: center;
-  color: #79a151;
   font-size: 2em;
 }
 .Home .statement {
-  padding: 10px 40px;
+  padding: 10px 120px;
   margin-top: 70px;
   margin-bottom: 10px;
 }
-.carousel .slide img {
-  height: 70vh;
+.carousel .slide {
+  background-color: #fff !important;
 }
+.carousel .slide img {
+  height: auto;
+  max-width: 80vw;
+}
+
 .carousel .thumbs-wrapper {
   margin: 20px 0px !important;
+  display: none;
 }
 .carousel .thumb,
 .carousel .thumb img {
@@ -62,8 +67,8 @@ html {
 .carousel .thumbs {
   padding-left: 0px;
 }
-.carousel .thumb.selected {
-  border: 3px solid #79a151 !important;
+.carousel .carousel-status {
+  display: none;
 }
 
 /* Gallery */
@@ -92,46 +97,109 @@ html {
   border-radius: 4px;
   overflow: hidden;
 }
+#react-modal-image-img {
+  width: auto;
+}
 
 /* Bio & Contact & Exhibitons */
 .bio,
 .contact,
 .exhibitions {
-  text-align: center;
   height: 80vh;
-}
-.bio h1.font-weight-light,
-.contact h1,
-.exhibitions h1,
-.exhibitions a {
-  color: #79a151;
 }
 .exhibitions a {
   font-size: 1.4em;
 }
 .bio p,
-.exhibitions p {
-  font-size: 1.4em;
-  margin-bottom: 0px;
-}
+.exhibitions p,
 .contact p,
 .contact a {
   font-size: 1.4em;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
+  color: rgba(0, 0, 0, 0.5);
 }
-.bio h1,
-.exhibitions h1,
-.contact h1 {
+.bio h1 {
+  margin-top: 20px;
+}
+.bio img {
+  margin-top: 34px;
+}
+
+.contact img {
+  width: 100%;
+}
+
+.exhibitions h1 {
   margin-top: 40px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* Medium/Large-sized screens */
 @media only screen and (min-width: 768px) {
-  .navigation {
-    margin-bottom: 60px;
-  }
   .image-container {
     column-count: 3;
+  }
+  .bio img {
+    float: right;
+  }
+  .contact img {
+    float: right;
   }
 }
 
@@ -141,22 +209,22 @@ html {
   }
 }
 
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
 /* Small-Medium screens */
 @media only screen and (max-width: 768px) {
   .Home .statement {
-    padding: 10px;
+    padding: 40px;
   }
   .image-container {
     column-count: 2;
   }
   .Home .rec img {
     height: 50vh;
-  }
-  .carousel ul.control-dots li.dot {
-    display: none;
-  }
-  .carousel .slide img {
-    height: 40vh;
   }
   .bio h1,
   .exhibitions h1,
