@@ -6,7 +6,7 @@ function Bio() {
       <div className="container">
         <div className="row  my-5">
           <div className="col-md-6 col-lg-6 col-sm-12">
-            <img src="./assets/college-of-redwoods.jpg"  alt="college of the redwoods" height="100px"></img>
+            <img src="./assets/college-of-redwoods.jpg"  alt="college of the redwoods" height="300px"></img>
           </div>
           <div className="col-md-6 col-lg-6 col-sm-12">
             <h1 className="font-weight-light">Education</h1>
@@ -14,7 +14,7 @@ function Bio() {
             <p>Capellagarden/ Sweden 2005</p>
           </div>
           <div className="col-md-6 col-lg-6 col-sm-12">            
-            <img src="./assets/woodworker_west.jpg" alt="woodworker west" height="100px"></img>
+            <img src="./assets/woodworker_west.jpg" alt="woodworker west" height="200px"></img>
           </div>
           <div className="col-md-6 col-lg-6 col-sm-12">
             <h1 className="font-weight-light">Publications</h1>
@@ -23,7 +23,7 @@ function Bio() {
             <p>Woodworker West 2007</p>
           </div>
           <div className="col-md-6 col-lg-6 col-sm-12">
-            <img src="./assets/craftsman_challenge.png" alt="craftsman challenge" width="300px"></img>
+            <img src="./assets/craftsman_challenge.png" alt="craftsman challenge" width="300px" style={{'margin-top':'50px'}}></img>
           </div>
           <div className="col-md-6 col-lg-6 col-sm-12">
             <h1 className="font-weight-light">Honors</h1>
