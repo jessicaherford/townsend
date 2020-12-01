@@ -42,7 +42,7 @@ html {
 /* Home */
 .Home .statement > h1 {
   text-align: center;
-  font-size: 2em;
+  font-size: 1.7em;
 }
 .Home .statement {
   padding: 10px 120px;
@@ -56,7 +56,6 @@ html {
   height: auto;
   max-width: 80vw;
 }
-
 .carousel .thumbs-wrapper {
   margin: 20px 0px !important;
   display: none;
@@ -71,7 +70,9 @@ html {
 .carousel .carousel-status {
   display: none;
 }
-
+.carousel .control-dots .dot.selected {
+  background: #efefef;
+}
 .carousel .control-dots .dot {
   background: #e0dede;
 }
@@ -144,6 +145,10 @@ html {
 
 .exhibitions h1 {
   margin-top: 40px;
+}
+
+.exhibitions {
+  margin-left: 10%;
 }
 
 /* The Modal (background) */
@@ -239,6 +244,10 @@ html {
   .Home .rec img {
     height: 50vh;
   }
+  .carousel-root {
+    outline: none;
+    margin-top: 20px;
+  }
   .bio h1,
   .exhibitions h1,
   .contact h1 {
@@ -260,5 +269,8 @@ html {
   .navbar-brand > span {
     font-size: 18px;
     margin-top: -10px;
+  }
+  .carousel .control-dots {
+    display: none;
   }
 }
