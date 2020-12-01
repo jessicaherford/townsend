@@ -7,6 +7,7 @@ a[href^="tel"] {
 /* Box-sizing reset: //w3bits.com/?p=3225 */
 html {
   box-sizing: border-box;
+  background-color: #f5f5f5;
 }
 *,
 *:before,
@@ -49,7 +50,7 @@ html {
   margin-bottom: 10px;
 }
 .carousel .slide {
-  background-color: #fff !important;
+  background-color: #e0dede !important;
 }
 .carousel .slide img {
   height: auto;
@@ -71,6 +72,9 @@ html {
   display: none;
 }
 
+.carousel .control-dots .dot {
+  background: #e0dede;
+}
 /* Gallery */
 .gallery {
   width: 80vw;
@@ -112,17 +116,26 @@ html {
 }
 .bio p,
 .exhibitions p,
+.exhibitions a,
 .contact p,
 .contact a {
   font-size: 1.4em;
   margin-bottom: 0px;
   color: rgba(0, 0, 0, 0.5);
 }
+.exhibitions a {
+  text-decoration: underline;
+}
 .bio h1 {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .bio img {
   margin-top: 34px;
+}
+
+.bio div.col-md-6:nth-child(5) > img:nth-child(1) {
+  background: #fff;
+  padding: 20px 12px;
 }
 
 .contact img {

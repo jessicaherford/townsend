@@ -2,35 +2,16 @@ import React, { Component } from "react";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-const buildURL = (imagePath) => `./assets/${imagePath}.jpg`;
+const buildURL = (imagePath) => `./assets/${imagePath}.png`;
 
 class Home extends Component {
     state = {
-      // images: [ 
-      //   {id: 1, title: "gal1"},
-      //   {id: 2, title: "gal2"},
-      //   {id: 3, title: "gal3"},
-      //   {id: 4, title: "gal4"},
-      //   {id: 5, title: "gal4-nobg"},
-      //   {id: 8, title: "gal8"},
-      //   {id: 9, title: "gal9"},
-      //   {id: 10, title: "gal10"},
-      //   {id: 11, title: "gal11"},
-      //   {id: 12, title: "gal12"},
-      //   {id: 13, title: "gal13"},
-      //   {id: 14, title: "gal14"},
-      //   {id: 15, title: "gal15"},
-      //   {id: 16, title: "gal16"},
-      //   {id: 17, title: "gal17"},
-      //   {id: 18, title: "gal18"},
-      //   {id: 21, title: "gal21"},
-      //   {id: 22, title: "gal22"},
-      //   {id: 24, title: "gal24"},
-      //   {id: 25, title: "gal25"}      
-      // ]
       images: [ 
+        {id: 1, title: "gal1"},
+        {id: 2, title: "gal2"},
         {id: 17, title: "gal17"},
-        {id: 12, title: "gal21"}
+        {id: 21, title: "gal21"},
+        {id: 26, title: "gal26"}
       ]
     }
 
