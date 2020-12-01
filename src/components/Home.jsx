@@ -7,11 +7,11 @@ const buildURL = (imagePath) => `./assets/${imagePath}.png`;
 class Home extends Component {
     state = {
       images: [ 
-        {id: 1, title: "gal1"},
-        {id: 2, title: "gal2"},
         {id: 17, title: "gal17"},
+        {id: 2, title: "gal2"},
         {id: 21, title: "gal21"},
-        {id: 26, title: "gal26"}
+        {id: 26, title: "gal26"},
+        {id: 1, title: "gal1"}
       ]
     }
 
