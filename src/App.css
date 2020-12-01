@@ -52,10 +52,6 @@ html {
 .carousel .slide {
   background-color: #e0dede !important;
 }
-.carousel .slide img {
-  height: auto;
-  max-width: 80vw;
-}
 .carousel .thumbs-wrapper {
   margin: 20px 0px !important;
   display: none;
@@ -219,6 +215,10 @@ html {
   .contact img {
     float: right;
   }
+  .carousel .slide img {
+    height: auto;
+    max-width: 76vw;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -242,6 +242,7 @@ html {
   }
   .Home .statement {
     padding: 40px;
+    margin-top: 10px;
   }
   .image-container {
     column-count: 2;
