@@ -110,7 +110,7 @@ html {
 .bio,
 .contact,
 .exhibitions {
-  height: 80vh;
+  height: 90vh;
 }
 .exhibitions a {
   font-size: 1.4em;
@@ -235,6 +235,11 @@ html {
 
 /* Small-Medium screens */
 @media only screen and (max-width: 768px) {
+  .bio,
+  .contact,
+  .exhibitions {
+    height: auto;
+  }
   .Home .statement {
     padding: 40px;
   }
@@ -257,6 +262,9 @@ html {
 
 /* Small screens */
 @media only screen and (max-width: 460px) {
+  .exhibitions {
+    margin-left: 2%;
+  }
   .gallery {
     width: 100vw;
   }
