@@ -126,7 +126,8 @@ html {
 .bio h1 {
   margin-top: 30px;
 }
-.bio img {
+.bio img,
+.exhibitions img {
   margin-top: 34px;
 }
 
@@ -141,10 +142,6 @@ html {
 
 .exhibitions h1 {
   margin-top: 40px;
-}
-
-.exhibitions {
-  margin-left: 10%;
 }
 
 /* The Modal (background) */
@@ -209,10 +206,9 @@ html {
   .image-container {
     column-count: 3;
   }
-  .bio img {
-    float: right;
-  }
-  .contact img {
+  .bio img,
+  .contact img,
+  .exhibitions img {
     float: right;
   }
   .carousel .slide img {
